@@ -19,7 +19,7 @@ Nama | NRP
 ... | 5027241xxx
 ... | 5027241xxx
 ... | 5027241xxx
-... | 5027241xxx
+M. Faqih Ridho | 5027241123
 
 ## Deskripsi Soal
 
