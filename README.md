@@ -22,11 +22,9 @@ Nama | NRP
 M. Faqih Ridho | 5027241123
 
 ## Deskripsi Soal
-
-> Insert testcase... (contoh dibawah) // hapus line ini
-
-Memahami race condition pada operasi check-then-act. Program membuat 2 thread; tiap thread mencoba mengambil satu-satunya sumber daya yang tersedia dari variabel global stok (nilai awal 1). Jika tanpa mutex, kedua thread bisa lolos pengecekan dan sama-sama mengambil sumber daya, menghasilkan nilai akhir stok menjadi -1.
-
+Test Case 30
+Si Paling Aplikasi
+Buat sebuah aplikasi web sederhana menggunakan Python dan Flask yang menampilkan pesan "Halo dari Kelompok[x]". Pakai Docker Compose untuk mendefine dan menjalankan aplikasi ini dan konfigurasikan juga agar docker compose membangun image dari Dockerfile lokal dan memetakan port container ke port di host.
 ### Catatan
 
 > Insert catatan dari pengerjaan kalian... (contoh dibawah) // hapus line ini
