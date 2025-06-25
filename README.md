@@ -16,9 +16,9 @@
 
 Nama | NRP
 --- | ---
-... | 5027241xxx
-... | 5027241xxx
-... | 5027241xxx
+Muhammad Fachry Shalahuddin Rusamsi | 5027241031
+Raihan Fahri Ghazali | 5027241061
+Muhammad Khairul Yahya | 5027241092
 M. Faqih Ridho | 5027241123
 
 ## Deskripsi Soal
