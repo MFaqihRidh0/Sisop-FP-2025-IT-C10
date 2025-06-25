@@ -61,6 +61,11 @@ Docker adalah platform yang merevolusi cara perangkat lunak dibangun, dikirim, d
 ...
 
 **Video Menjalankan Program**
+
+Video Penjelasan Code Program + Output:
+
+https://youtu.be/zjG0LpdG49Y
+
 ...
 
 ## Daftar Pustaka
