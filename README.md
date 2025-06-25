@@ -40,8 +40,13 @@ Struktur repository:
 > Insert poin soal...
 
 **Teori**
+Flask adalah kerangka kerja aplikasi web untuk Python yang diklasifikasikan sebagai "kerangka kerja mikro". Sebutan "mikro" tidak berarti Flask kekurangan fungsionalitas; sebaliknya, ini mengacu pada filosofi desainnya. Flask bertujuan untuk menjaga intinya tetap sederhana namun dapat diperluas. Ia menyediakan komponen-komponen esensial untuk pengembangan web tanpa memaksakan struktur proyek atau dependensi tertentu pada pengembang.   
 
-...
+Secara internal, Flask bergantung pada dua pustaka utama: toolkit Werkzeug WSGI untuk menangani antarmuka tingkat rendah antara server dan aplikasi, dan mesin template Jinja untuk merender halaman HTML. Fleksibilitas ini memungkinkan pengembang untuk memilih alat dan pustaka yang paling sesuai dengan kebutuhan mereka, seperti memilih komponen basis data atau pustaka validasi formulir.   
+
+Filosofi minimalis ini memiliki implikasi penting. Secara default, Flask menyertakan server pengembangan yang disediakan oleh Werkzeug. Server ini sangat berguna untuk debugging dan pengujian selama pengembangan karena fitur-fiturnya seperti auto-reloader. Namun, server ini tidak dirancang untuk menangani beban kerja produksi dan secara eksplisit dinyatakan tidak cocok untuk penyebaran langsung. Akibatnya, tanggung jawab untuk memilih dan mengkonfigurasi server WSGI tingkat produksi, seperti Gunicorn atau uWSGI, jatuh pada pengembang. Ini menyoroti trade-off yang melekat pada Flask: ia menawarkan kebebasan dan kesederhanaan di awal, tetapi menuntut lebih banyak keputusan arsitektur saat aplikasi tumbuh menuju kesiapan produksi.   
+
+
 
 **Solusi**
 
@@ -50,9 +55,7 @@ Struktur repository:
 > Insert poin soal...
 
 **Teori**
-
-...
-
+Docker adalah platform yang merevolusi cara perangkat lunak dibangun, dikirim, dan dijalankan dengan menggunakan teknologi kontainerisasi. Container adalah unit perangkat lunak standar yang mengemas kode aplikasi beserta semua dependensinya, seperti pustaka, alat sistem, dan runtime. Pengemasan ini memastikan bahwa aplikasi berjalan secara konsisten dan dapat diandalkan di berbagai lingkungan komputasi, mulai dari laptop pengembang hingga server produksi di cloud.
 **Solusi**
 
 ...
@@ -62,6 +65,6 @@ Struktur repository:
 
 ## Daftar Pustaka
 
-Sitasi 1
-Sitasi 2
-Sitasi 3
+Agarwal, G. (2021). Modern DevOps Practices: Implement and secure DevOps in the public cloud with cutting-edge tools, tips, tricks, and techniques. Packt Publishing.    
+Humble, J., & Farley, D. (n.d.). Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation. Buku ini memberikan panduan komprehensif untuk menyederhanakan pengiriman perangkat lunak dan mengimplementasikan praktik terbaik untuk otomatisasi build, tes, dan deployment.    
+Kim, G., Humble, J., Debois, P., & Willis, J. (n.d.). The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations. Buku ini adalah panduan praktis untuk mengimplementasikan praktik DevOps, dibangun di atas konsep yang diperkenalkan dalam The Phoenix Project.    
