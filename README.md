@@ -27,7 +27,6 @@ Si Paling Aplikasi
 Buat sebuah aplikasi web sederhana menggunakan Python dan Flask yang menampilkan pesan "Halo dari Kelompok[x]". Pakai Docker Compose untuk mendefine dan menjalankan aplikasi ini dan konfigurasikan juga agar docker compose membangun image dari Dockerfile lokal dan memetakan port container ke port di host.
 ### Catatan
 
-> Insert catatan dari pengerjaan kalian... (contoh dibawah) // hapus line ini
 
 Struktur repository:
 ```
@@ -126,7 +125,9 @@ docker-compose up --build
 
 ## Daftar Pustaka
 
-1.Pallets, The. (2024). Flask: The Python micro framework for building web applications. Diakses pada 25 Juni 2025, dari https://github.com/pallets/flask    
+1.Pallets, The. (2024). Flask: The Python micro framework for building web applications. Diakses pada 25 Juni 2025, dari https://github.com/pallets/flask 
+
 2.Pallets, The. (2024). Werkzeug: The comprehensive WSGI web application library. Diakses pada 25 Juni 2025, dari https://github.com/pallets/werkzeug
+
 3.Docker, Inc. (2024). Docker Compose. Diakses pada 25 Juni 2025, dari https://github.com/docker/compose
   
