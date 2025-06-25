@@ -78,14 +78,35 @@ Meskipun tugas yang diberikan hanya melibatkan satu layanan (aplikasi web Flask)
 
 **Solusi**
 
-...
-**Video Menjalankan Program**
+Membungkus Aplikasi Flask ke dalam Image dan Menjalankannya melalui Docker Compose
+- `Dockerfile` digunakan untuk membangun image berbasis `python:3.9-slim`.
+- Menginstal dependensi dari `requirements.txt` dan menjalankan Flask menggunakan `CMD`.
+- Image dijalankan melalui `docker-compose.yml` yang juga memetakan port dan environment.
 
-Video Penjelasan Code Program + Output:
+```dockerfile
+FROM python:3.9-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+EXPOSE 5000
+CMD ["flask", "run", "--host=0.0.0.0"]
 
-https://youtu.be/zjG0LpdG49Y
+```
 
-...
+Penjelasan:
+
+- Image dibangun dari file `Dockerfile` menggunakan base image `python:3.9-slim`.
+- Flask dijalankan dengan perintah `flask run` dan host diset ke `0.0.0.0` agar dapat diakses dari luar container.
+- `docker-compose.yml` digunakan untuk menjalankan image dan mengatur:
+  - Port mapping `5000:5000` (akses via `http://localhost:5000`)
+  - Environment development (`FLASK_ENV=development`)
+  - Volume bind (`.:/app`) agar mendukung live reload.
+- Proyek dijalankan dengan perintah:
+
+```bash
+docker-compose up --build
+
 
 ## Daftar Pustaka
 
