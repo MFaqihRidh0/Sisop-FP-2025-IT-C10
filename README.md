@@ -37,7 +37,7 @@ Struktur repository:
 
 ## Pengerjaan
 
-> Insert poin soal...
+"Buat sebuah aplikasi web sederhana menggunakan Python dan Flask"
 
 **Teori**
 Flask adalah kerangka kerja aplikasi web untuk Python yang diklasifikasikan sebagai "kerangka kerja mikro". Sebutan "mikro" tidak berarti Flask kekurangan fungsionalitas; sebaliknya, ini mengacu pada filosofi desainnya. Flask bertujuan untuk menjaga intinya tetap sederhana namun dapat diperluas. Ia menyediakan komponen-komponen esensial untuk pengembangan web tanpa memaksakan struktur proyek atau dependensi tertentu pada pengembang.   
@@ -52,7 +52,7 @@ Filosofi minimalis ini memiliki implikasi penting. Secara default, Flask menyert
 
 ...
 
-> Insert poin soal...
+"Pakai Docker Compose untuk mendefine dan menjalankan aplikasi ini"
 
 **Teori**
 Docker adalah platform yang merevolusi cara perangkat lunak dibangun, dikirim, dan dijalankan dengan menggunakan teknologi kontainerisasi. Container adalah unit perangkat lunak standar yang mengemas kode aplikasi beserta semua dependensinya, seperti pustaka, alat sistem, dan runtime. Pengemasan ini memastikan bahwa aplikasi berjalan secara konsisten dan dapat diandalkan di berbagai lingkungan komputasi, mulai dari laptop pengembang hingga server produksi di cloud.
@@ -60,6 +60,25 @@ Docker adalah platform yang merevolusi cara perangkat lunak dibangun, dikirim, d
 
 ...
 
+
+"konfigurasikan juga agar docker compose membangun image dari Dockerfile lokal dan memetakan port container ke port di host"
+
+**Teori**
+Meskipun Docker sangat baik untuk mengelola container individual, sebagian besar aplikasi dunia nyata tidak terdiri dari satu komponen tunggal. Aplikasi modern sering kali merupakan sistem terdistribusi yang terdiri dari beberapa layanan yang saling berinteraksi, seperti server web, basis data, layanan caching, dan antrian pesan. Mengelola siklus hidup setiap container secara manual—menjalankannya dengan perintah    
+
+docker run yang panjang, mengkonfigurasi jaringan agar mereka dapat berkomunikasi, dan mengelola volume data—menjadi rumit dan rawan kesalahan.
+
+Di sinilah Docker Compose berperan. Docker Compose adalah alat yang dirancang untuk mendefinisikan dan menjalankan aplikasi Docker multi-container. Dengan menggunakan file konfigurasi tunggal yang ditulis dalam format YAML (biasanya bernama    
+
+docker-compose.yml), pengembang dapat mendefinisikan seluruh tumpukan aplikasi mereka, termasuk layanan, jaringan, dan volume. Setelah didefinisikan, seluruh aplikasi dapat dihidupkan dengan satu perintah sederhana:    
+
+docker compose up.   
+
+Meskipun tugas yang diberikan hanya melibatkan satu layanan (aplikasi web Flask), penggunaan Docker Compose tetap sangat relevan. Ini berfungsi sebagai alat pengembangan dan prototipe yang sangat baik. Pengembang dapat mendefinisikan lingkungan lokal mereka dalam satu file deklaratif, membagikannya dengan anggota tim lain, dan memastikan bahwa semua orang bekerja dengan tumpukan yang identik. Dengan memperkenalkan Docker Compose sejak dini, ini mengajarkan alur kerja berbasis layanan yang dapat diskalakan. Ini adalah langkah pertama yang sangat baik untuk memahami konsep orkestrasi yang lebih canggih seperti Kubernetes, karena ini menanamkan pola pikir deklaratif tentang bagaimana layanan harus didefinisikan dan dijalankan bersama.   
+
+**Solusi**
+
+...
 **Video Menjalankan Program**
 
 Video Penjelasan Code Program + Output:
@@ -70,6 +89,6 @@ https://youtu.be/zjG0LpdG49Y
 
 ## Daftar Pustaka
 
-Agarwal, G. (2021). Modern DevOps Practices: Implement and secure DevOps in the public cloud with cutting-edge tools, tips, tricks, and techniques. Packt Publishing.    
-Humble, J., & Farley, D. (n.d.). Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation. Buku ini memberikan panduan komprehensif untuk menyederhanakan pengiriman perangkat lunak dan mengimplementasikan praktik terbaik untuk otomatisasi build, tes, dan deployment.    
-Kim, G., Humble, J., Debois, P., & Willis, J. (n.d.). The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations. Buku ini adalah panduan praktis untuk mengimplementasikan praktik DevOps, dibangun di atas konsep yang diperkenalkan dalam The Phoenix Project.    
+    Agarwal, G. (2021). Modern DevOps Practices: Implement and secure DevOps in the public cloud with cutting-edge tools, tips, tricks, and techniques. Packt Publishing.    
+Humble, J., & Farley, D. (n.d.).     
+    Kim, G., Humble, J., Debois, P., & Willis, J. (n.d.). The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations. Buku ini adalah panduan praktis untuk mengimplementasikan praktik DevOps, dibangun di atas konsep yang diperkenalkan dalam The Phoenix Project.    
