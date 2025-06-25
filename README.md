@@ -31,8 +31,19 @@ Buat sebuah aplikasi web sederhana menggunakan Python dan Flask yang menampilkan
 
 Struktur repository:
 ```
-.
-..
+└── FPSISOP
+    ├── Dockerfile
+    ├── Dockerfile:Zone.Identifier
+    ├── __pycache__
+    │   ├── app.cpython-39.pyc
+    │   └── app.cpython-39.pyc:Zone.Identifier
+    ├── app.py
+    ├── app.py:Zone.Identifier
+    ├── docker-compose.yml
+    ├── docker-compose.yml:Zone.Identifier
+    ├── requirements.txt
+    └── requirements.txt:Zone.Identifier
+
 ```
 
 ## Pengerjaan
@@ -40,6 +51,7 @@ Struktur repository:
 "Buat sebuah aplikasi web sederhana menggunakan Python dan Flask"
 
 **Teori**
+
 Flask adalah kerangka kerja aplikasi web untuk Python yang diklasifikasikan sebagai "kerangka kerja mikro". Sebutan "mikro" tidak berarti Flask kekurangan fungsionalitas; sebaliknya, ini mengacu pada filosofi desainnya. Flask bertujuan untuk menjaga intinya tetap sederhana namun dapat diperluas. Ia menyediakan komponen-komponen esensial untuk pengembangan web tanpa memaksakan struktur proyek atau dependensi tertentu pada pengembang.   
 
 Secara internal, Flask bergantung pada dua pustaka utama: toolkit Werkzeug WSGI untuk menangani antarmuka tingkat rendah antara server dan aplikasi, dan mesin template Jinja untuk merender halaman HTML. Fleksibilitas ini memungkinkan pengembang untuk memilih alat dan pustaka yang paling sesuai dengan kebutuhan mereka, seperti memilih komponen basis data atau pustaka validasi formulir.   
@@ -55,8 +67,11 @@ Filosofi minimalis ini memiliki implikasi penting. Secara default, Flask menyert
 "Pakai Docker Compose untuk mendefine dan menjalankan aplikasi ini"
 
 **Teori**
+
 Docker adalah platform yang merevolusi cara perangkat lunak dibangun, dikirim, dan dijalankan dengan menggunakan teknologi kontainerisasi. Container adalah unit perangkat lunak standar yang mengemas kode aplikasi beserta semua dependensinya, seperti pustaka, alat sistem, dan runtime. Pengemasan ini memastikan bahwa aplikasi berjalan secara konsisten dan dapat diandalkan di berbagai lingkungan komputasi, mulai dari laptop pengembang hingga server produksi di cloud.
+
 **Solusi**
+
 
 ...
 
@@ -64,6 +79,7 @@ Docker adalah platform yang merevolusi cara perangkat lunak dibangun, dikirim, d
 "konfigurasikan juga agar docker compose membangun image dari Dockerfile lokal dan memetakan port container ke port di host"
 
 **Teori**
+
 Meskipun Docker sangat baik untuk mengelola container individual, sebagian besar aplikasi dunia nyata tidak terdiri dari satu komponen tunggal. Aplikasi modern sering kali merupakan sistem terdistribusi yang terdiri dari beberapa layanan yang saling berinteraksi, seperti server web, basis data, layanan caching, dan antrian pesan. Mengelola siklus hidup setiap container secara manual—menjalankannya dengan perintah    
 
 docker run yang panjang, mengkonfigurasi jaringan agar mereka dapat berkomunikasi, dan mengelola volume data—menjadi rumit dan rawan kesalahan.
@@ -110,6 +126,7 @@ docker-compose up --build
 
 ## Daftar Pustaka
 
-    Agarwal, G. (2021). Modern DevOps Practices: Implement and secure DevOps in the public cloud with cutting-edge tools, tips, tricks, and techniques. Packt Publishing.    
-Humble, J., & Farley, D. (n.d.).     
-    Kim, G., Humble, J., Debois, P., & Willis, J. (n.d.). The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations. Buku ini adalah panduan praktis untuk mengimplementasikan praktik DevOps, dibangun di atas konsep yang diperkenalkan dalam The Phoenix Project.    
+1.Pallets, The. (2024). Flask: The Python micro framework for building web applications. Diakses pada 25 Juni 2025, dari https://github.com/pallets/flask    
+2.Pallets, The. (2024). Werkzeug: The comprehensive WSGI web application library. Diakses pada 25 Juni 2025, dari https://github.com/pallets/werkzeug
+3.Docker, Inc. (2024). Docker Compose. Diakses pada 25 Juni 2025, dari https://github.com/docker/compose
+  
