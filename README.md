@@ -23,6 +23,7 @@ M. Faqih Ridho | 5027241123
 
 ## Deskripsi Soal
 Test Case 30
+
 Si Paling Aplikasi
 Buat sebuah aplikasi web sederhana menggunakan Python dan Flask yang menampilkan pesan "Halo dari Kelompok[x]". Pakai Docker Compose untuk mendefine dan menjalankan aplikasi ini dan konfigurasikan juga agar docker compose membangun image dari Dockerfile lokal dan memetakan port container ke port di host.
 ### Catatan
@@ -60,7 +61,14 @@ Filosofi minimalis ini memiliki implikasi penting. Secara default, Flask menyert
 
 
 **Solusi**
+```
+app = Flask(__name__)
 
+@app.route('/')
+```
+objek app ini menjadi jantung dan otak dari aplikasi web Anda. Objek ini bertanggung jawab untuk mengatur routing, mengelola siklus request-response, dan Menyediakan Server Pengembangan
+
+@app.route('/') adalah cara Anda memberitahu objek app, "Jika ada permintaan masuk untuk URL root ('/'), tolong jalankan fungsi hello()." Tanpa objek dari kelas Flask, Anda tidak akan punya app dan tidak bisa membuat rute.
 ...
 
 "Pakai Docker Compose untuk mendefine dan menjalankan aplikasi ini"
