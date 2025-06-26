@@ -112,6 +112,32 @@ services:
 * Mengatur environment variable untuk mode development
 * Mount direktori saat ini ke /app di container untuk development
 
+3. Dependensi Python
+<pre>
+flask==2.0.1
+Werkzeug==2.0.3
+</pre>
+
+4. Dockerfile
+<pre>
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["python", "app.py"]
+</pre>
+
+* Menggunakan image base Python 3.9 slim
+* Menetapkan direktori kerja /app
+* Menginstall dependensi dari requirements.txt
+* Menyalin semua kode aplikasi
+* Menjalankan aplikasi Flask
+        
 "konfigurasikan juga agar docker compose membangun image dari Dockerfile lokal dan memetakan port container ke port di host"
 
 **Teori**
