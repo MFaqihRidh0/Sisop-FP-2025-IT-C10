@@ -72,8 +72,45 @@ Docker adalah platform yang merevolusi cara perangkat lunak dibangun, dikirim, d
 **Solusi**
 
 
-...
+1. File Aplikasi Flask
 
+<pre>
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return 'Halo dari Kelompok 10'
+
+if __name__ == '__main__':
+    app.run()
+</pre>
+* Ini adalah aplikasi Flask dasar dengan satu route utama (/)
+* Akan menampilkan "Halo dari Kelompok 10" saat diakses
+* Dijalankan dengan server development bawaan Flask
+
+2. Konfigurasi Docker Compose
+<pre>
+version: '3.8'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - .:/app
+</pre>
+
+* Mendefinisikan service web yang akan menjalankan aplikasi Flask
+* Membangun image dari Dockerfile di direktori saat ini
+* Mengekspos port 5000 container ke port 5000 host
+* Mengatur environment variable untuk mode development
+* Mount direktori saat ini ke /app di container untuk development
 
 "konfigurasikan juga agar docker compose membangun image dari Dockerfile lokal dan memetakan port container ke port di host"
 
