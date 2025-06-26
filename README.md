@@ -66,9 +66,9 @@ app = Flask(__name__)
 
 @app.route('/')
 ```
-objek app ini menjadi jantung dan otak dari aplikasi web Anda. Objek ini bertanggung jawab untuk mengatur routing, mengelola siklus request-response, dan Menyediakan Server Pengembangan
+* objek app ini menjadi jantung dan otak dari aplikasi web kami. Objek ini bertanggung jawab untuk mengatur routing, mengelola siklus request-response, dan Menyediakan Server Pengembangan
 
-@app.route('/') adalah cara Anda memberitahu objek app, "Jika ada permintaan masuk untuk URL root ('/'), tolong jalankan fungsi hello()." Tanpa objek dari kelas Flask, Anda tidak akan punya app dan tidak bisa membuat rute.
+* @app.route('/') adalah cara kami memberitahu objek app, "Jika ada permintaan masuk untuk URL root ('/'), tolong jalankan fungsi hello()." Tanpa objek dari kelas Flask, kami tidak akan punya app dan tidak bisa membuat rute.
 ...
 
 "Pakai Docker Compose untuk mendefine dan menjalankan aplikasi ini"
